@@ -1,0 +1,11 @@
+table {
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th, td {
+  border: solid;
+  margin-left: auto;
+  margin-right: auto;
+}
