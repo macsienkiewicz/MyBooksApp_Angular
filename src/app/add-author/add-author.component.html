@@ -1,0 +1,31 @@
+<div>
+  <h2>Add Author</h2>
+  <form>
+    <div class="text_left">
+      <label for="name">Name: </label>
+      <input [(ngModel)]="newAuthor.name" placeholder="Name" name="name" id="name">
+    </div>
+
+    <div class="text_left">
+      <label for="surname">Surname: </label>
+      <input [(ngModel)]="newAuthor.surname" placeholder="Surname" name="surname" id="surname">
+    </div>
+
+    <div class="text_left">
+      <label for="nationality">Nationality: </label>
+      <input [(ngModel)]="newAuthor.nationality" placeholder="Nationality" name="nationality" id="nationality">
+    </div>
+
+    <div class="text_left">
+      <label for="yearOfBirth">Year of birth: </label>
+      <input type="number" [(ngModel)]="newAuthor.yearOfBirth" placeholder="0" name="yearOfBirth" id="yearOfBirth">
+    </div>
+
+    <div class="text_left">
+      <label for="yearOfDeath">Year of death: </label>
+      <input type="number" [(ngModel)]="newAuthor.yearOfDeath" placeholder="0" name="yearOfDeath" id="yearOfDeath">
+    </div>
+
+    <button (click)="createAuthor()">Add author</button>
+  </form>
+</div>
