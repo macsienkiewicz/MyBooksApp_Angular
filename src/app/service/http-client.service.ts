@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 
 export class Author {
   constructor(
-    public id: number,
     public name: string,
     public surname: string,
     public nationality: string,
@@ -24,5 +23,9 @@ export class HttpClientService {
   getAuthors() {
     console.log("test call");
     return this.httpClient.get<Author[]>('http://localhost:8080/authors');
+  }
+
+  public createAuthor(author: Author) {
+    return this.httpClient.post<Author>('http://localhost:8080/authors', author);
   }
 }
