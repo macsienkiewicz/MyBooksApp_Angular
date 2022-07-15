@@ -1,0 +1,20 @@
+<p>author works!</p>
+
+<table>
+  <thead></thead>
+  <tr>
+    <th>name</th>
+    <th>nationality</th>
+    <th>year of birth</th>
+    <th>year of death</th>
+  </tr>
+
+  <tbody>
+  <tr *ngFor="let author of authors">
+    <td>{{author.name}} {{author.surname}}</td>
+    <td>{{author.nationality}}</td>
+    <td>{{author.yearOfBirth}}</td>
+    <td>{{author.yearOfDeath}}</td>
+  </tr>
+  </tbody>
+</table>
